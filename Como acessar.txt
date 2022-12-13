@@ -1,0 +1,25 @@
+node -v 
+npm -v
+cd local onde está pasta (desktop) 
+cd nome pasta (Aula 0712) 
+npm create vite@latest digite nome projeto (app-rotas) react javaScript 
+cd nome do projeto (app-rotas) 
+npm install 
+npm run dev
+
+cd desktop 
+cd nome da pasta criada (Aula 0712) 
+cd app-rotas 
+npm install react-bootstrap bootstrap 
+npm install react-router-dom
+
+
+npm create vite@latest
+npm install
+npm install axios
+
+npm instal json-server
+npx json-server --watch db.json --port 3002
+npm run dev
+
+import 'bootstrap/dist/css/bootstrap.min.css';
