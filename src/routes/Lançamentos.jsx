@@ -37,6 +37,7 @@ const Lançamentos = () => {
             lançamentos.map((lançamentos) => (
               <div className="post" key={lançamentos.id}>
                 <h2>{lançamentos.id}</h2>
+                <img width="250px" height="250px" src={lançamentos.imagem}/>
                 <h2>{lançamentos.regiao}</h2>
                 <p>{lançamentos.bairro}</p> 
                 <p>{lançamentos.tamanho}</p>

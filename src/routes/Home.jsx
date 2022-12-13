@@ -36,6 +36,7 @@ const Home = () => {
           <div className="post" key={casas.id}>
             <h2>{casas.id}</h2>
             <h2>{casas.tipo}</h2>
+            <img width="250px" height="250px" src={casas.imagem}/>
             <p>{casas.quartos}</p> 
             <p>{casas.suite}</p>
             <p>{casas.tamanho}</p>

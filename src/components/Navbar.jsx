@@ -19,12 +19,12 @@ const Navbar = () => {
           <Link to={`/Lançamentos`} >Lançamentos</Link>
         </li>
         <li>
-          <Link to={`/new`} className="new-btn">
-            Novo Post
-          </Link>
+          <Link to={`/admin`}>Gerenciar</Link>
         </li>
         <li>
-          <Link to={`/admin`}>Gerenciar</Link>
+          <Link to={`/new`} className="new-btn">
+            Fazer Login
+          </Link>
         </li>
       </ul>
     </nav>

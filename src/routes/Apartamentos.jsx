@@ -37,6 +37,7 @@ const Ape = () => {
             apartamentos.map((apartamentos) => (
               <div className="post" key={apartamentos.id}>
                 <h2>{apartamentos.id}</h2>
+                <img width="250px" height="250px" src={apartamentos.imagem}/>
                 <h2>{apartamentos.tipo}</h2>
                 <p>{apartamentos.quartos}</p> 
                 <p>{apartamentos.suite}</p>
