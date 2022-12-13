@@ -2,6 +2,7 @@
   "Casas": [
     {
       "id": 1,
+      "img": "./apifake/imagem/logo1.png",
       "tipo": "Linear",
       "quartos": "1 quarto",
       "suite": "Suite: Não",
