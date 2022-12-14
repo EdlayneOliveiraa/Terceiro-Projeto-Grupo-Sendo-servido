@@ -23,3 +23,21 @@ npx json-server --watch db.json --port 3002
 npm run dev
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+----------------------------------------------------------------------
+npm 
+npm init vite@latest meu-App --template react
+npm install
+npm install react
+npm install react-dom
+npm install next
+npm install eslint
+npm install eslint-config-next
+npm install react-bootstrap bootstrap
+npm install axios
+---servidor---
+npm install -g json-server
+
+
+
+Inicia o servidor-------
+json-server --watch db.json --port 3002
