@@ -31,12 +31,16 @@ const Post = () => {
 
   return (
     <div className="post-container">
-      {!post.title ? (
+      {!post.tipo ? (
         <p>Carregando...</p>
       ) : (
         <div className="post">
-          <h2>{post.title}</h2>
-          <p>{post.body}</p>
+          <h2>{casas.id}</h2>
+            <h2>{casas.tipo}</h2>
+            <img width="250px" height="250px" src={casas.imagem}/>
+         <p>{casas.quartos}</p> 
+            <p>{casas.suite}</p>
+            <p>{casas.tamanho}</p>
         </div>
       )}
     </div>
