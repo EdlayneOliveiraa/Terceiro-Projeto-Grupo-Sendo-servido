@@ -12,6 +12,8 @@ import Admin from "./routes/Admin";
 import EditPost from "./routes/EditPost";
 import Apartamentos from "./routes/Apartamentos";
 import Lançamentos from "./routes/Lançamentos";
+import Comentarios from "./routes/Comentarios";
+
 
 import "./index.css";
 
@@ -47,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/Lançamentos",
         element: <Lançamentos />,
+      },
+      {
+        path: "/Comentarios",
+        element: <Comentarios />,
       },
     ],
   },

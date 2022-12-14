@@ -40,8 +40,8 @@ const Home = () => {
             <p>{casas.quartos}</p> 
             <p>{casas.suite}</p>
             <p>{casas.tamanho}</p>
-            <Link className="btn" to={`/Casas/${casas.id}`}>
-              Ler mais
+            <Link className="btn" to={`/comentarios`}>
+              Comentários
             </Link>
           </div>
         ))

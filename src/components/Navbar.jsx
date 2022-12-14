@@ -22,6 +22,9 @@ const Navbar = () => {
           <Link to={`/admin`}>Gerenciar</Link>
         </li>
         <li>
+          <Link to={`/Comentarios`}>Deixe seu comentário</Link>
+        </li>
+        <li>
           <Link to={`/login`} className="new-btn">
             Fazer Login
           </Link>
