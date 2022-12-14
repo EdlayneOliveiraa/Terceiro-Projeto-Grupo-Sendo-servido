@@ -13,6 +13,7 @@ import EditPost from "./routes/EditPost";
 import Apartamentos from "./routes/Apartamentos";
 import Lançamentos from "./routes/Lançamentos";
 import Comentarios from "./routes/Comentarios";
+import NewPost from "./routes/NewPost";
 
 
 import "./index.css";
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
         path: "/Comentarios",
         element: <Comentarios />,
       },
+      {
+        path: "/NewPost",
+        element: <NewPost />,
+      },
     ],
   },
 ]);
@@ -63,3 +68,4 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
