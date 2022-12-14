@@ -8,6 +8,8 @@ import "./Home.css";
 
 import Carrosel from "../components/Carrosel"
 
+import Button from 'react-bootstrap/Button';
+
 
 const Home = () => {
   const [casas, setCasas] = useState([]);
@@ -32,21 +34,25 @@ const Home = () => {
     <div className="home">
       <Carrosel/>
 
-      <h1>Casas</h1>
+      <h1 className="casa">Casas</h1>
       {casas.length === 0 ? (
         <p>Carregando...</p>
       ) : (
         casas.map((casas) => (
+          
           <div className="post" key={casas.id}>
-            <h2>{casas.id}</h2>
-            <h2>{casas.tipo}</h2>
-            <img width="250px" height="250px" src={casas.imagem}/>
-            <p>{casas.quartos}</p> 
-            <p>{casas.suite}</p>
-            <p>{casas.tamanho}</p>
-            <Link className="btn" to={`/comentarios`}>
-              Comentários
+            <div className="container">
+            <img src={casas.imagem}/>
+            
+            <h4 className="animate__animated animate__lightSpeedInRight">{casas.tipo}</h4>
+            <h4 className="animate__animated animate__lightSpeedInRight">{casas.quartos}</h4>
+            <h4 className="animate__animated animate__lightSpeedInRight">{casas.suite}</h4>
+            <h4 className="animate__animated animate__lightSpeedInRight">{casas.tamanho}</h4>
+            
+            <Link className="btn-btn" to={`/NewPost`}>
+              Inserir Post
             </Link>
+            </div>
           </div>
         ))
       )}
