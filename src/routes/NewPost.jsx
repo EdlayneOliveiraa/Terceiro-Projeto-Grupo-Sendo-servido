@@ -9,27 +9,31 @@ import "./NewPost.css";
 const NewPost = () => {
   const navigate = useNavigate();
 
-  const [title, setTitle] = useState();
-  const [body, setBody] = useState();
+  const [tipo, setTipo] = useState();
+  const [quarto, setQuarto] = useState();
+  const [suite, setSuite] = useState();
+  const [tamanho, setTamanho] = useState();
+  const [imagem, setImagem] = useState();
+  
 
   const createPost = async (e) => {
     e.preventDefault();
 
-    const post = { title, body };
+    const post = { tipo, quarto, suite, tamanho, imagem };
 
     await imovelfetch.post("/Casas",  {
-      body: post,
-    });
+     id: post,
+    })
 
     navigate("/");
     await imovelfetch.post("/Apartamentos",  {
-      body: post,
-    });
+      id: post,
+    })
 
     navigate("/");
     await imovelfetch.post("/Lançamentos",  {
-      body: post,
-    });
+      id: post,
+    })
 
     navigate("/");
   };
@@ -39,28 +43,47 @@ const NewPost = () => {
       <h2>Inserir novo Post:</h2>
       <form onSubmit={(e) => createPost(e)}>
         <div className="form-control">
-          <label htmlFor="title">Título:</label>
+          <label htmlFor="title">Tipo de Residência:</label>
           <input
-            type="text"
-            name="title"
-            id="title"
-            placeholder="Digite o título"
-            onChange={(e) => setTitle(e.target.value)}
+            placeholder="Digite o tipo de Residência..."
+            onChange={(e) => setTipo(e.target.value)}
           />
-        </div>
-        <div className="form-control">
-          <label htmlFor="title">Título:</label>
+ {/* tipo de residencia */}
+           
+          <label htmlFor="title">Quantidade de Quartos:</label>
           <textarea
-            name="body"
-            id="body"
-            placeholder="Digite o conteúdo..."
-            onChange={(e) => setBody(e.target.value)}
+           
+            placeholder="Digite a quantidade de quartos..."
+            onChange={(e) => setQuarto(e.target.value)}
           ></textarea>
+{/* quartos */}
+          <label htmlFor="title">Suites:</label>
+          <textarea
+          
+            placeholder="A residência possui suíte?..."
+            onChange={(e) => setSuite(e.target.value)}
+          ></textarea>
+{/* suites */}
+
+          <label htmlFor="title">Tamanho por M²:</label>
+          <textarea
+           
+            placeholder="Diga quantos M² a residência tem..."
+            onChange={(e) => setTamanho(e.target.value)}
+          ></textarea>
+{/* taamnho */}
+          <label htmlFor="title">Imagem:</label>
+          <textarea
+            placeholder="Faça o upload da imagem..."
+            onChange={(e) => setImagem(e.target.value)}
+          ></textarea>
+{/* imagem */}
         </div>
-        <input type="submit" value="Criar Post" className="btn" />
+        <input type="submit" value="Inserir Post" className="btn" />
       </form>
     </div>
   );
 };
 
 export default NewPost;
+
