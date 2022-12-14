@@ -33,21 +33,22 @@ const Ape = () => {
       return (
         <div className="home">
           <Carrosel/>
-          <h1>Apartamentos</h1>
+          <h1 className="casa">Apartamentos</h1>
           {apartamentos.length === 0 ? (
             <p>Carregando...</p>
           ) : (
             apartamentos.map((apartamentos) => (
               <div className="post" key={apartamentos.id}>
-                <h2>{apartamentos.id}</h2>
+                <div className="container">
                 <img width="250px" height="250px" src={apartamentos.imagem}/>
-                <h2>{apartamentos.tipo}</h2>
-                <p>{apartamentos.quartos}</p> 
-                <p>{apartamentos.suite}</p>
-                <p>{apartamentos.tamanho}</p>
-                <Link className="btn" to={`/Apartamentos/${apartamentos.id}`}>
-                  Ler mais
-                </Link>
+                <h4 className="animate__animated animate__lightSpeedInRight">{apartamentos.id}</h4>
+                <h4 className="animate__animated animate__lightSpeedInRight">{apartamentos.tipo}</h4>
+                <h4 className="animate__animated animate__lightSpeedInRight">{apartamentos.quartos}</h4> 
+                <h4 className="animate__animated animate__lightSpeedInRight">{apartamentos.suite}</h4>
+                <Link className="btn-btn" to={`/NewPost`}>
+              Inserir Post
+            </Link>
+                </div>
               </div>
             ))
           )}
