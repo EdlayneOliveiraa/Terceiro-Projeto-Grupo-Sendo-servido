@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
+import Carrosel from "../components/Carrosel";
+
 import "./Home.css";
 
 
@@ -30,6 +32,7 @@ const Lançamentos = () => {
     
       return (
         <div className="home">
+          <Carrosel/>
           <h1>Lançamentos</h1>
           {lançamentos.length === 0 ? (
             <p>Carregando...</p>
