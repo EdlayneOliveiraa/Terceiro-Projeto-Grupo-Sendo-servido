@@ -7,7 +7,7 @@ import App from "./App";
 
 import Home from "./routes/Home";
 import Post from "./routes/Post";
-import NewPost from "./routes/NewPost";
+import Login from "./routes/Login";
 import Admin from "./routes/Admin";
 import EditPost from "./routes/EditPost";
 import Apartamentos from "./routes/Apartamentos";
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
         element: <Post />,
       },
       {
-        path: "/new",
-        element: <NewPost />,
+        path: "/login",
+        element: <Login />,
       },
       {
         path: "/admin",

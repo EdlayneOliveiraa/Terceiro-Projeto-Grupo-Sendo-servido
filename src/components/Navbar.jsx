@@ -22,7 +22,7 @@ const Navbar = () => {
           <Link to={`/admin`}>Gerenciar</Link>
         </li>
         <li>
-          <Link to={`/new`} className="new-btn">
+          <Link to={`/login`} className="new-btn">
             Fazer Login
           </Link>
         </li>
