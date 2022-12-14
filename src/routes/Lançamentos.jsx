@@ -33,21 +33,22 @@ const Lançamentos = () => {
       return (
         <div className="home">
           <Carrosel/>
-          <h1>Lançamentos</h1>
+          <h1 className="casa">Lançamentos</h1>
           {lançamentos.length === 0 ? (
             <p>Carregando...</p>
           ) : (
             lançamentos.map((lançamentos) => (
               <div className="post" key={lançamentos.id}>
-                <h2>{lançamentos.id}</h2>
+                <div className="container">
                 <img width="250px" height="250px" src={lançamentos.imagem}/>
-                <h2>{lançamentos.regiao}</h2>
-                <p>{lançamentos.bairro}</p> 
-                <p>{lançamentos.tamanho}</p>
-                <p>{lançamentos.entrega}</p>
-                <Link className="btn" to={`/Lancamentos/${lançamentos.id}`}>
-                  Ler mais
-                </Link>
+                <h4 className="animate__animated animate__lightSpeedInRight">{lançamentos.id}</h4>
+                <h4 className="animate__animated animate__lightSpeedInRight">{lançamentos.regiao}</h4>
+                <h4 className="animate__animated animate__lightSpeedInRight">{lançamentos.bairro}</h4> 
+                <h4 className="animate__animated animate__lightSpeedInRight">{lançamentos.tamanho}</h4>
+                <Link className="btn-btn" to={`/NewPost`}>
+              Inserir Post
+            </Link>
+                </div>
               </div>
             ))
           )}
