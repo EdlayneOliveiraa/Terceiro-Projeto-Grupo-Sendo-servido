@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 
+import Menu from "../components/Menu"
+
 import Carrosel from "../components/Carrosel";
 
 import "./Home.css";
@@ -32,6 +34,9 @@ const Ape = () => {
     
       return (
         <div className="home">
+         <Menu />
+           <br />
+           <br />
           <Carrosel/>
           <h1 className="casa">Apartamentos</h1>
           {apartamentos.length === 0 ? (
