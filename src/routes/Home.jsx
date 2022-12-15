@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 import "./Home.css";
 
+import Menu from "../components/Menu"
+
 import Carrosel from "../components/Carrosel"
 
 import Button from 'react-bootstrap/Button';
@@ -32,6 +34,9 @@ const Home = () => {
 
   return (
     <div className="home">
+     <Menu />
+     <br />
+     <br />
       <Carrosel/>
 
       <h1 className="casa">Casas</h1>
