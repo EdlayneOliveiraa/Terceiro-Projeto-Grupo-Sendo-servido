@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 import Carrosel from "../components/Carrosel";
 
+import Menu from "../components/Menu"
+
 import "./Home.css";
 
 
@@ -32,6 +34,9 @@ const Lançamentos = () => {
     
       return (
         <div className="home">
+          <Menu />
+           <br />
+           <br />
           <Carrosel/>
           <h1 className="casa">Lançamentos</h1>
           {lançamentos.length === 0 ? (
