@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
 
 import "./App.css";
+import Footer from "./components/rodape";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="container">
         <Outlet />
       </div>
+      <Footer />
     </div>
   );
 }
