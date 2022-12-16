@@ -33,8 +33,7 @@ COMO ACESSAR?
 Crie um clone e abra um primeiro terminal, instale a dependência "NPM INSTALL", após isso abra um segundo terminal e entre na pasta >>> C:\Users\Desktop\projeto 3\apifake e ative o servidor json server = npx json-server --watch db.json --port 3002, volte para o primeiro terminal e ative o servidor vite+react com a chamada "npm run dev".
 
 
-
-Grupo 3
+<h2>Grupo 3:</h2>
 (Edlayne, Melissa, Sara, Luciano, Guilherme)
 
 
