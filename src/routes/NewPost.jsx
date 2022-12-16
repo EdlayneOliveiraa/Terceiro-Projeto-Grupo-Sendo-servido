@@ -4,6 +4,8 @@ import { useState } from "react";
 
 import { useNavigate } from "react-router-dom";
 
+import Form from 'react-bootstrap/Form';
+
 import "./NewPost.css";
 
 const NewPost = () => {
@@ -72,14 +74,14 @@ const NewPost = () => {
             onChange={(e) => setTamanho(e.target.value)}
           ></textarea>
 {/* taamnho */}
-          <label htmlFor="title">Imagem:</label>
-          <textarea
-            placeholder="Faça o upload da imagem..."
-            onChange={(e) => setImagem(e.target.value)}
-          ></textarea>
+          <Form.Group controlId="formFileSm" className="mb-3">
+        <Form.Label>Imagem:</Form.Label>
+        <Form.Control type="file" size="sm" onChange={(e) => setImagem(e.target.value)}/>
+      </Form.Group>
+        
 {/* imagem */}
         </div>
-        <input type="submit" value="Inserir Post" className="btn" />
+        <input type="submit" value="Inserir Post" className="btn-btn" />
       </form>
     </div>
   );
