@@ -32,3 +32,19 @@ cadastrados.
 COMO ACESSAR?
 Crie um clone e abra um primeiro terminal, instale a dependência "NPM INSTALL", após isso abra um segundo terminal e entre na pasta >>> C:\Users\Desktop\projeto 3\apifake e ative o servidor json server = npx json-server --watch db.json --port 3002, volte para o primeiro terminal e ative o servidor vite+react com a chamada "npm run dev".
 
+
+
+Grupo 3
+(Edlayne, Melissa, Sara, Luciano, Guilherme)
+
+
+Edlayne- Criação da API/ Correção do bug do menu/ Página de Login/ Página formulário/ Design das páginas(em equipe) 
+
+Melissa- requisição das 3 rotas da api/métodos post,put/delete/ estilização das rotas/design das páginas(em equipe)
+
+Sara - Slide / tentei fazer o login / criação da API / conteúdo(fotos e dados) / rotas / criação da logo
+
+Luciano- Criação do carrossel, estilização do menu e barra de pesquisa.
+
+Guilherme- Rodapé, estilização do rodapé (vs code).
+
